@@ -1,0 +1,22 @@
+{
+    "mcpServers": {
+        "your-server-name": {
+            "command": "command-to-run",
+            "args": [
+                "arg1",
+                "arg2"
+            ],
+            "env": {
+                "ENV_VARIABLE_NAME": "value",
+                "API_KEY": "${API_KEY}"
+            },
+            "description": "Brief description of what this server does",
+            "notes": [
+                "Add any important configuration notes here",
+                "Document required environment variables",
+                "List any prerequisites or dependencies",
+                "Include setup instructions if needed"
+            ]
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Projects"
+      ],
+      "description": "Provides file system access for reading, writing, and managing files",
+      "notes": [
+        "Update the path argument to the directory you want to grant access to",
+        "You can specify multiple directories by adding more path arguments",
+        "For security, limit access to only necessary directories",
+        "On Windows, use double backslashes in paths or forward slashes"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+# Environment and credentials
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Node modules (if using any JS tools)
+node_modules/
+
+# Python virtual environments
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Custom configurations (keep templates only)
+*-local.json
+*-production.json
+*-dev.json

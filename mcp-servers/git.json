@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "git": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-git"
+            ],
+            "description": "Enables git repository operations and version control capabilities",
+            "notes": [
+                "Provides access to git commands for repository analysis",
+                "Can view commit history, diffs, and branch information",
+                "Requires git to be installed on the system",
+                "Works with repositories in accessible directories"
+            ]
+        }
+    }
+}

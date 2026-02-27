@@ -1,0 +1,40 @@
+{
+    "mcpServers": {
+        "brave-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-brave-search"
+            ],
+            "env": {
+                "BRAVE_API_KEY": "${BRAVE_API_KEY}"
+            },
+            "description": "Provides web search capabilities using Brave Search API",
+            "notes": [
+                "Requires a Brave Search API key (get one at https://brave.com/search/api/)",
+                "Set BRAVE_API_KEY environment variable with your API key",
+                "Never commit your API key to version control",
+                "Free tier available with rate limits",
+                "Alternative: Use Google Custom Search or other search APIs"
+            ]
+        },
+        "google-search": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-google-search"
+            ],
+            "env": {
+                "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+                "GOOGLE_CSE_ID": "${GOOGLE_CSE_ID}"
+            },
+            "description": "Provides web search using Google Custom Search API",
+            "notes": [
+                "Requires Google API key and Custom Search Engine ID",
+                "Get credentials at https://developers.google.com/custom-search",
+                "Free tier: 100 queries per day",
+                "Set both GOOGLE_API_KEY and GOOGLE_CSE_ID environment variables"
+            ]
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "mcpServers": {
+        "database": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-postgres"
+            ],
+            "env": {
+                "DB_HOST": "localhost",
+                "DB_PORT": "5432",
+                "DB_NAME": "your_database_name",
+                "DB_USER": "${DB_USER}",
+                "DB_PASSWORD": "${DB_PASSWORD}"
+            },
+            "description": "Connects to PostgreSQL database for queries and schema inspection",
+            "notes": [
+                "Replace placeholder values with your actual database configuration",
+                "Use environment variables for sensitive credentials (DB_USER, DB_PASSWORD)",
+                "For MySQL, use @modelcontextprotocol/server-mysql instead",
+                "For SQLite, use @modelcontextprotocol/server-sqlite with file path",
+                "Consider using read-only credentials for safety",
+                "Ensure database server is accessible from the client machine"
+            ],
+            "alternatives": {
+                "mysql": "@modelcontextprotocol/server-mysql",
+                "sqlite": "@modelcontextprotocol/server-sqlite"
+            }
+        }
+    }
+}
