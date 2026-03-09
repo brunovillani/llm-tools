@@ -1,6 +1,6 @@
-# Agent Instruction Templates
+# Agent Instructions
 
-This directory contains instruction templates for different types of LLM agents. Each template provides comprehensive guidelines, best practices, and behavioral patterns for specific agent roles.
+This directory contains an descriptive file to create your own LLM subagent, a template for a base agent, and example files for different types of LLM agents.
 
 ## 📋 Available Templates
 
@@ -31,10 +31,10 @@ A code review specialist focused on quality and best practices.
 ### [base-template.md](base-template.md)
 A blank template for creating custom agent instructions.
 
-## 🎯 How to Use
+## How to Use
 
 ### 1. Select a Template
-Choose the template that best matches your use case or start with `base-template.md` for a custom agent.
+Choose the template that best matches your use case or start with [base-template.md](base-template.md) and follow the [instructions guide](instructions-guide.md).
 
 ### 2. Customize Instructions
 Edit the template to fit your specific needs:
@@ -49,37 +49,7 @@ Copy the customized instructions to your LLM agent system's configuration.
 ### 4. Iterate and Improve
 Refine the instructions based on agent performance and user feedback.
 
-## 📝 Template Structure
-
-Each template follows a consistent structure:
-
-```markdown
-# Agent Identity
-- Role definition
-- Core capabilities
-- Behavioral guidelines
-
-# Instructions
-- Specific task guidelines
-- Best practices
-- Do's and don'ts
-
-# Communication Style
-- Tone and personality
-- Response formatting
-- User interaction patterns
-
-# Workflows
-- Common task patterns
-- Step-by-step processes
-- Decision frameworks
-
-# Examples
-- Sample interactions
-- Use case demonstrations
-```
-
-## 💡 Best Practices
+## Best Practices
 
 ### Writing Effective Instructions
 
@@ -105,24 +75,7 @@ Each template follows a consistent structure:
 - ❌ Lack of examples or concrete guidance
 - ❌ Ignoring edge cases and error handling
 
-## 🔄 Combining Templates
-
-You can combine elements from multiple templates for hybrid agents:
-
-```markdown
-# Multi-Role Agent Example
-
-## Primary Role: Coding Assistant
-[Include coding-assistant core instructions]
-
-## Secondary Role: Code Reviewer
-[Include code-reviewer quality checks]
-
-## Research Capability
-[Include researcher fact-checking guidelines]
-```
-
-## 🛠️ Advanced Techniques
+## Advanced Techniques
 
 ### Conditional Behavior
 Define different behaviors based on context:

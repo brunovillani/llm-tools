@@ -8,20 +8,16 @@ tags: [template, example]
 
 # Skill Template
 
-This is a template for creating new skills. Replace this content with your skill's specific instructions.
-
-## Overview
-
 [Brief description of what this skill does and when to use it]
 
-## When to Use This Skill
+## Usage
 
-Use this skill when:
+### Use this skill when:
 - ✅ [Scenario 1]
 - ✅ [Scenario 2]
 - ✅ [Scenario 3]
 
-Don't use this skill when:
+### Don't use this skill when:
 - ❌ [Scenario 1]
 - ❌ [Scenario 2]
 - ❌ [Scenario 3]
@@ -48,28 +44,15 @@ npm install package1 package2
 
 ## Instructions
 
-### Step 1: [First Step Name]
+### Step X: [Step Name]
 
-[Detailed instructions for the first step]
+[Detailed instructions for the step]
 
 ```python
 # Example code
 def example_function():
     pass
 ```
-
-### Step 2: [Second Step Name]
-
-[Detailed instructions for the second step]
-
-```python
-# Example code
-result = example_function()
-```
-
-### Step 3: [Third Step Name]
-
-[Detailed instructions for the third step]
 
 ## Examples
 
@@ -153,29 +136,6 @@ except Exception as e:
     raise
 ```
 
-## Testing
-
-Verify the skill works correctly:
-
-```python
-def test_skill():
-    """Test the skill functionality"""
-    # Test implementation
-    assert expected == actual
-```
-
-## Performance Considerations
-
-- [Performance tip 1]
-- [Performance tip 2]
-- [Performance tip 3]
-
-## Security Considerations
-
-- [Security consideration 1]
-- [Security consideration 2]
-- [Security consideration 3]
-
 ## Troubleshooting
 
 ### Issue 1: [Common Problem]
@@ -194,18 +154,3 @@ def test_skill():
 
 **Solution**: [How to fix it]
 
-## Related Skills
-
-This skill works well with:
-- [Related skill 1] - [How they complement each other]
-- [Related skill 2] - [How they complement each other]
-
-## Additional Resources
-
-- [Resource 1 with link]
-- [Resource 2 with link]
-- [Resource 3 with link]
-
-## Version History
-
-- **1.0.0** (YYYY-MM-DD): Initial version

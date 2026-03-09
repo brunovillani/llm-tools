@@ -1,106 +1,50 @@
-# [Agent Name] Template
+---
+name: agent-name
+description: A clear description of the agent's purpose and when it should be used.
+tools: Read, Write, Edit, Bash, Glob, Grep # Comma-separated list of allowed tools
+model: sonnet # Optional: specify the model to use (e.g., sonnet, opus)
+---
 
-[Brief description of the agent's role and purpose]
+# [Agent Name]
+[Brief description of the agent's role and purpose, expertise, and approach to execute tasks]
 
-## Core Identity
-
-**Role**: [Primary role description]  
-**Expertise**: [Key areas of expertise]  
-**Approach**: [How the agent approaches tasks]
-
-## Primary Capabilities
-
-### [Capability 1]
-- [Key ability 1]
-- [Key ability 2]
-- [Key ability 3]
-
-### [Capability 2]
-- [Key ability 1]
-- [Key ability 2]
-- [Key ability 3]
-
-### [Capability 3]
-- [Key ability 1]
-- [Key ability 2]
-- [Key ability 3]
-
-## Instructions
-
-### When [Performing Primary Task]
-
-1. **[Step 1]**: [Description]
-2. **[Step 2]**: [Description]
-3. **[Step 3]**: [Description]
-4. **[Step 4]**: [Description]
-5. **[Step 5]**: [Description]
-
-### When [Performing Secondary Task]
-
-1. **[Step 1]**: [Description]
-2. **[Step 2]**: [Description]
-3. **[Step 3]**: [Description]
+## Expertise
+*   [Skill 1: e.g., Expert in Python coding style]
+*   [Skill 2: e.g., Code review for best practices]
+*   [Skill 3: e.g., Explaining technical concepts clearly]
 
 ## Communication Style
+[Specify how this agent should interact with the main agent or other subagents, including expected input/output formats.]
 
 - **[Trait 1]**: [Description]
 - **[Trait 2]**: [Description]
-- **[Trait 3]**: [Description]
 
-### Response Format
+## Development Workflow
+[Define the structured implementation phases or specific steps the agent should follow when performing its task.]
 
+### Instructions
+[Define details about specific instructions and the steps to execute them.]
+
+#### When [Task description]
+
+1. **[Step 1]**: [Description]
+2. **[Step 2]**: [Description]
+
+## Quality Checklist
+[List criteria for a successful output, e.g., "Always ensure unit tests pass", "Check for documentation links".]
+
+## Best Practices (Do's and Don'ts)
+- ✅ **Do**: [Description]
+- ❌ **Dont**: [Description]
+
+## Response Format
 **For [Task Type 1]**:
 ```markdown
 ## [Section 1]
 [Content]
-
-## [Section 2]
-[Content]
-
-## [Section 3]
-[Content]
-```
-
-**For [Task Type 2]**:
-```markdown
-## [Section 1]
-[Content]
-
 ## [Section 2]
 [Content]
 ```
-
-## Best Practices
-
-### [Category 1]
-- ✅ [Best practice 1]
-- ✅ [Best practice 2]
-- ✅ [Best practice 3]
-
-### [Category 2]
-- ✅ [Best practice 1]
-- ✅ [Best practice 2]
-- ✅ [Best practice 3]
-
-### [Category 3]
-- ✅ [Best practice 1]
-- ✅ [Best practice 2]
-- ✅ [Best practice 3]
-
-## Workflows
-
-### [Workflow 1 Name]
-
-1. **[Step 1]**: [Description]
-2. **[Step 2]**: [Description]
-3. **[Step 3]**: [Description]
-4. **[Step 4]**: [Description]
-
-### [Workflow 2 Name]
-
-1. **[Step 1]**: [Description]
-2. **[Step 2]**: [Description]
-3. **[Step 3]**: [Description]
 
 ## Example Interactions
 
@@ -109,22 +53,7 @@
 **User**: "[Example user request]"
 
 **Response**:
-
 [Example response showing the agent's approach and style]
-
-### Example 2: [Scenario Name]
-
-**User**: "[Example user request]"
-
-**Response**:
-
-[Example response showing the agent's approach and style]
-
-## Constraints & Limitations
-
-- **[Constraint 1]**: [Description]
-- **[Constraint 2]**: [Description]
-- **[Constraint 3]**: [Description]
 
 ## Skills Integration
 
@@ -134,9 +63,8 @@ When appropriate, leverage specialized skills:
 - **[Skill 2]**: Use the `skill-name` skill for [purpose]
 - **[Skill 3]**: Use the `skill-name` skill for [purpose]
 
-## Continuous Improvement
+## Constraints & Limitations
 
-- [Improvement area 1]
-- [Improvement area 2]
-- [Improvement area 3]
-- [Improvement area 4]
+- **[Constraint 1]**: [Description]
+- **[Constraint 2]**: [Description]
+- **[Constraint 3]**: [Description]

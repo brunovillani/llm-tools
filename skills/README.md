@@ -22,10 +22,10 @@ Generate and execute automated tests for code quality assurance.
 - **Capabilities**: Unit tests, integration tests, test frameworks
 - **Tools**: pytest, jest, unittest
 
-### [_template/](_template/)
+### [_template/SKILL.md](_template/SKILL.md)
 Template for creating new skills.
 
-## 🎯 What is a Skill?
+## What is a Skill?
 
 A skill is a specialized capability that an agent can use to perform specific tasks. Each skill contains:
 
@@ -34,7 +34,7 @@ A skill is a specialized capability that an agent can use to perform specific ta
 - **examples/**: Reference implementations and usage patterns
 - **resources/**: Additional files, templates, or assets
 
-## 📝 Skill Structure
+## Skill Structure
 
 ### SKILL.md Format
 
@@ -76,40 +76,7 @@ tags: [tag1, tag2, tag3]
 [Things to avoid or watch out for]
 ```
 
-## 🚀 Using Skills
-
-### 1. Choose a Skill
-Browse available skills and select one that matches your needs.
-
-### 2. Copy to Your Agent
-Copy the skill directory to your agent's skills folder:
-```
-your-agent/
-  skills/
-    web-scraping/
-      SKILL.md
-      scripts/
-      examples/
-```
-
-### 3. Reference in Agent Instructions
-Update your agent instructions to reference the skill:
-
-```markdown
-## Skills
-
-When you need to extract data from websites, use the web-scraping skill.
-Read the skill instructions at skills/web-scraping/SKILL.md before proceeding.
-```
-
-### 4. Agent Reads and Uses Skill
-When the agent encounters a relevant task, it will:
-1. Read the SKILL.md file
-2. Follow the instructions
-3. Use any provided scripts or resources
-4. Apply best practices from the skill
-
-## 🛠️ Creating Custom Skills
+## Creating Custom Skills
 
 ### 1. Copy the Template
 ```bash
@@ -144,7 +111,7 @@ Verify the skill works by having an agent use it on test tasks.
 ### 5. Document Usage
 Add your skill to this README with a brief description.
 
-## 💡 Best Practices
+## Best Practices
 
 ### Writing Effective Skills
 
@@ -174,7 +141,7 @@ For this task, you'll need to:
 3. Use the testing-automation skill to verify results
 ```
 
-## 📚 Skill Categories
+## Skill Categories
 
 ### Data & Integration
 - Web scraping
@@ -200,7 +167,7 @@ For this task, you'll need to:
 - Monitoring setup
 - Backup procedures
 
-## 🔧 Advanced Techniques
+## Advanced Techniques
 
 ### Parameterized Skills
 
@@ -246,7 +213,7 @@ Don't use this skill when:
 - ❌ Real-time interaction is needed (use browser automation)
 ```
 
-## 🤝 Contributing Skills
+## Contributing Skills
 
 When contributing new skills:
 
@@ -256,13 +223,7 @@ When contributing new skills:
 4. **Provide Examples**: Show real-world usage
 5. **Update README**: Add your skill to this list
 
-## 📖 Additional Resources
-
-- [Skill Development Guide](../examples/skill-development-guide.md)
-- [Agent Integration Patterns](../examples/agent-skill-integration.md)
-- [Best Practices for Skill Design](../examples/skill-best-practices.md)
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Skill Not Loading
 - Verify SKILL.md exists in the skill directory
@@ -278,3 +239,53 @@ When contributing new skills:
 - Verify scripts have execute permissions
 - Check script dependencies are installed
 - Review script paths in SKILL.md
+
+
+# Skills
+
+## Template
+
+```markdown
+## Skills
+
+**Programming Languages:** `Python`, `JavaScript`, `Java`, `C++`, `Go`
+**Web Development:** `React`, `Node.js`, `HTML`, `CSS`, `Django`
+**Tools & Platforms:** `Docker`, `Kubernetes`, `Git`, `AWS`, `Azure`
+**Languages:** English (Fluent), French (Intermediate)
+
+---
+Or a simpler list format
+
+## Skills
+
+*   **Programming Languages:** Python, JavaScript, Java, C++, Go
+*   **Web Development:** React, Node.js, HTML, CSS, Django
+*   **Tools & Platforms:** Docker, Kubernetes, Git, AWS, Azure
+*   **Languages:** English (Fluent), French (Intermediate)
+```
+For Claude specific format:
+
+```markdown
+---
+name: your-skill-name
+description: What the skill does. Use when the user asks to [specific phrases].
+---
+
+# Your Skill Name
+
+Create a detailed description of what your skill does and how it works. This section is for instructions and context.
+
+## Usage
+
+Provide code snippets or step-by-step instructions on how Claude should use the skill.
+\`\`\`bash
+# Example command
+your-tool-command --option
+\`\`\`
+
+## Examples
+
+Reference examples or provide specific scenarios.
+See [EXAMPLES.md](EXAMPLES.md) for more examples.
+
+```
